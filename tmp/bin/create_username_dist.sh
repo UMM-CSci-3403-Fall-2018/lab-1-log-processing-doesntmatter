@@ -6,4 +6,4 @@ targetDirectory=$1
 cd ..
 
 #Gather required contents of failed_login_data
-cat failed_login_data.txt | awk '{$4}' > tmptxt.txt
+cat log_files/$targetDirectory/failed_login_data.txt | awk '{ print $4}' > tmptxt.txt
