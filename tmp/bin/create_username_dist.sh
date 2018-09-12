@@ -6,4 +6,6 @@ targetDirectory=$1
 cd ..
 
 #Gather required contents of failed_login_data
-cat log_files/$targetDirectory/failed_login_data.txt | awk '{ print $4}' | sort | uniq -c | awk '{ print "data.addrow([\x27"$2"\x27, "$1"])"}' > tmptxt.tx
+cat log_files/$targetDirectory/failed_login_data.txt | awk '{ print $4}' | sort | uniq -c | awk '{ print "data.addrow([\x27"$2"\x27, "$1"])"}' > tmptxt.txt
+
+
