@@ -1,3 +1,5 @@
+#!/bin/bash
+
 directory=$1
 
 # Go to specified directory
